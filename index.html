@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="nav1">
+
+            <div class="nav1_bars"> <i class="fa-solid fa-bars"></i> </div>
+
+            <div class="logo nav1_items"></div>
+
+            <div class="location nav1_items">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="loc_info">
+                    <div class="loc_info_first">Delivering to India</div>
+                    <div class="nav1_items_second">Update location</div>
+                </div>
+            </div>
+
+            <div class="search">
+                <select id="search_select">
+                    <option selected hidden>All</option>
+                    <option>All Categories</option>
+                    <option>Books</option>
+                    <option>Beauty</option>
+                    <option>Computers</option>
+                    <option>Watches</option>
+                </select>
+                <input type="text" class="search_input" placeholder="Search Amazon.in">
+                <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+
+            <div class="lang nav1_items">
+                <img src="images/flag.png" alt="Flag" class="flag">
+                <select class="language">
+                    <option>EN</option>
+                </select>
+            </div>
+
+            <div class="sign_in nav1_items">
+                <div class="nav1_items_first">Hello, sign in</div>
+                <div class="nav1_items_second">Accounts & Lists <i class="fa-solid fa-angle-down"></i></div>
+            </div>
+
+            <div class="orders nav1_items">
+                <div class="nav1_items_first">Returns</div>
+                <div class="nav1_items_second">& Orders</div>
+            </div>
+
+            <div class="cart nav1_items">
+                <i class="fa-solid fa-cart-plus"></i>
+                <div class="nav1_items_second">Cart</div>
+            </div>
+
+    </div>
+
+    <div class="nav2">
+
+            <div class="nav2_items nav2_all">
+                <i class="fa-solid fa-bars"></i>
+                <span>All</span>
+            </div>
+
+            <div class="nav2_items">Amazon miniTV</div>
+            <div class="nav2_items">Sell</div>
+            <div class="nav2_items">Best Sellers</div>
+            <div class="nav2_items">Mobiles</div>
+            <div class="nav2_items">Today's Deals</div>
+            <div class="nav2_items">Electronics</div>
+            <div class="nav2_items">Gift Ideas</div>
+            <div class="nav2_items">Prime</div>
+            <div class="nav2_items">Customer Service</div>
+            <div class="nav2_items">New Releases</div>
+
+            <div class="nav2_items nav2_hidden">Home & Kitchen</div>
+            <div class="nav2_items nav2_hidden">Fashion</div>
+            <div class="nav2_items nav2_hidden">Amazon Pay</div>
+            <div class="nav2_items nav2_hidden">Computers</div>
+            <div class="nav2_items nav2_hidden">Books</div>
+            <div class="nav2_items nav2_hidden">Toys & Games</div>
+
+            <div class="nav2_banner">
+                <img src="images/nav2_banner.jpg" alt="banner image">
+            </div>
+
+    </div>
+
+    <main>
+
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 980px)" srcset="images/hero_section.jpg">
+                <img src="images/hero_small.jpg" alt="hero image">
+            </picture>
+        </div>
+
+        <div class="main_container">
+
+            <div class="cards_container">
+
+                <div class="cards">
+                    <h2 class="cards_heading">Recommended deals for you</h2>
+                    <div class="cards_subcontainer">
+                        <img src="images/card_1A.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_1B.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_1C.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_1D.jpg" alt="Category image" class="subcontainer_img">
+                    </div>
+                    <a href="#" class="cards_link">See all deals</a>
+                </div>
+
+                <div class="cards">
+                    <h2 class="cards_heading">Deals related to your views</h2>
+                    <div class="cards_subcontainer">
+                        <img src="images/card_2A.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_2B.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_2C.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_2D.jpg" alt="Category image" class="subcontainer_img">
+                    </div>
+                    <a href="#" class="cards_link">See all deals</a>
+                </div>
+
+                <div class="cards">
+                    <h2 class="cards_heading">Popular deals</h2>
+                    <div class="cards_subcontainer">
+                        <img src="images/card_3A.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_3B.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_3C.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_3D.jpg" alt="Category image" class="subcontainer_img">
+                    </div>
+                    <a href="#" class="cards_link">See all deals</a>
+                </div>
+
+                <div class="cards">
+                    <h2 class="cards_heading">Deals for you in Electronics</h2>
+                    <div class="cards_subcontainer">
+                        <img src="images/card_4A.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_4B.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_4C.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_4D.jpg" alt="Category image" class="subcontainer_img">
+                    </div>
+                    <a href="#" class="cards_link">See all deals</a>
+                </div>
+
+                <div class="cards">
+                    <h2 class="cards_heading">Deals for you in Office Products</h2>
+                    <div class="cards_subcontainer">
+                        <img src="images/card_5A.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_5B.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_5C.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_5D.jpg" alt="Category image" class="subcontainer_img">
+                    </div>
+                    <a href="#" class="cards_link">See all deals</a>
+                </div>
+
+                <div class="cards">
+                    <h2 class="cards_heading">Starting ₹79 | Home decor and furnishings</h2>
+                    <div class="cards_subcontainer">
+                        <img src="images/card_6A.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_6B.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_6C.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_6D.jpg" alt="Category image" class="subcontainer_img">
+                    </div>
+                    <a href="#" class="cards_link">See all deals</a>
+                </div>
+
+                <div class="cards">
+                    <h2 class="cards_heading">Up to 65% off | Deals on wide range of TVs</h2>
+                    <div class="cards_subcontainer">
+                        <img src="images/card_7A.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_7B.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_7C.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_7D.jpg" alt="Category image" class="subcontainer_img">
+                    </div>
+                    <a href="#" class="cards_link">See all deals</a>
+                </div>
+
+                <div class="cards">
+                    <h2 class="cards_heading">Deals for you in Cell Phones and Accessories</h2>
+                    <div class="cards_subcontainer">
+                        <img src="images/card_8A.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_8B.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_8C.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_8D.jpg" alt="Category image" class="subcontainer_img">
+                    </div>
+                    <a href="#" class="cards_link">See all deals</a>
+                </div>
+                
+                <div class="cards hidden_cards">
+                    <h2 class="cards_heading">Deals on smartphones that suits your budget</h2>
+                    <div class="cards_subcontainer">
+                        <img src="images/card_9A.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_9B.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_9C.jpg" alt="Category image" class="subcontainer_img">
+                        <img src="images/card_9D.jpg" alt="Category image" class="subcontainer_img">
+                    </div>
+                    <a href="#" class="cards_link">See all deals</a>
+                </div>
+
+            </div>
+
+            <div class="horizontal_container">
+                <h2 class="cards_heading">Starting ₹99 + 20% cashback on first order | Beauty & makeup</h2>
+                <div class="beauty_categories">
+                    <img src="images/beauty_banner1.jpg" alt="Beauty & Make Up">
+                    <img src="images/beauty_banner2.jpg" alt="Beauty & Make Up">
+                    <img src="images/beauty_banner3.jpg" alt="Beauty & Make Up">
+                    <img src="images/beauty_banner4.jpg" alt="Beauty & Make Up">
+                    <img src="images/beauty_banner5.jpg" alt="Beauty & Make Up">
+                    <img src="images/beauty_banner6.jpg" alt="Beauty & Make Up">
+                    <img src="images/beauty_banner7.jpg" alt="Beauty & Make Up">
+                    <img src="images/beauty_banner1.jpg" alt="Beauty & Make Up">
+                    <img src="images/beauty_banner2.jpg" alt="Beauty & Make Up">
+                    <img src="images/beauty_banner3.jpg" alt="Beauty & Make Up">
+                </div>
+            </div>
+
+            <div class="horizontal_container">
+                <h2 class="cards_heading">Starting ₹999 | Bestselling smartwatches from top brands</h2>
+                <div class="watches_categories">
+                    <img src="images/watch1.jpg" alt="watch1">
+                    <img src="images/watch2.jpg" alt="watch2">
+                    <img src="images/watch3.jpg" alt="watch3">
+                    <img src="images/watch4.jpg" alt="watch4">
+                    <img src="images/watch5.jpg" alt="watch5">
+                    <img src="images/watch6.jpg" alt="watch6">
+                    <img src="images/watch7.jpg" alt="watch7">
+                    <img src="images/watch8.jpg" alt="watch8">
+                </div>
+            </div>
+
+            <div class="cards_container">
+                <div class="cards">
+                    <h2 class="cards_heading">Buy 2 Get 10% off, freebies & more offers</h2>
+                    <div class="cards_banner_subcontainer">
+                        <img src="images/card_banner1.jpg" alt="Category image">
+                    </div>
+                    <a href="#" class="cards_link">See all offers</a>
+                </div>
+
+                <div class="cards">
+                    <h2 class="cards_heading">Up to 70% off | Refurbished Products</h2>
+                    <div class="cards_banner_subcontainer">
+                        <img src="images/card_banner2.jpg" alt="Category image">
+                    </div>
+                    <a href="#" class="cards_link">See all offers</a>
+                </div>
+
+                <div class="cards">
+                    <h2 class="cards_heading">Up to 40% off | Deals on mobiles and accessories</h2>
+                    <div class="cards_banner_subcontainer">
+                        <img src="images/card_banner3.jpg" alt="Category image">
+                    </div>
+                    <a href="#" class="cards_link">See all offers</a>
+                </div>
+
+                <div class="cards to_hidden_cards">
+                    <h2 class="cards_heading">Up to 70% off | International brands</h2>
+                    <div class="cards_banner_subcontainer">
+                        <img src="images/card_banner4.jpg" alt="Category image">
+                    </div>
+                    <a href="#" class="cards_link">See all offers</a>
+                </div>
+
+            </div>
+
+            <div class="horizontal_container">
+                <h2 class="cards_heading">Shop deals in top categories</h2>
+                <div class="top_categories">
+                    <img src="images/top_category1.jpg" alt="Top Categories">
+                    <img src="images/top_category2.jpg" alt="Top Categories">
+                    <img src="images/top_category3.jpg" alt="Top Categories">
+                    <img src="images/top_category4.jpg" alt="Top Categories">
+                    <img src="images/top_category5.jpg" alt="Top Categories">
+                    <img src="images/top_category6.jpg" alt="Top Categories">
+                </div>
+            </div>
+
+            <div class="adverstisement_banner">
+                <img src="images/advertisement.jpg" alt="Advertisement">
+            </div>
+
+        </div>
+   
+    </main>
+
+    <footer>
+
+        <div class="sign_container">
+            <p class="sign_title">See personalized recommendations</p>
+            <button class="sign_btn">Sign in</button>
+            <div class="new_customer">
+                <span>New customer?</span>
+                <span class="new_customer_second">Start here.</span>
+            </div>
+        </div>
+
+        <div class="to_top"><a href="#">Back to top</a></div>
+
+        <div class="footer_list">
+            <div class="footer_list_content">
+                <h3>Get to Know Us</h3>
+                <a href="">About Us</a>
+                <a href="">Careers</a>
+                <a href="">Press Releases</a>
+                <a href="">Amazon Science</a>
+            </div>
+
+            <div class="footer_list_content">
+                <h3>Connect with Us</h3>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+            </div>
+
+            <div class="footer_list_content">
+                <h3>Make Money with Us</h3>
+                <a href="">Sell on Amazon</a>
+                <a href="">Sell under Amazon Accelerator</a>
+                <a href="">Build Your Brand</a>
+                <a href="">Amazon Global Selling</a>
+                <a href="">Become an Affiliate</a>
+            </div>
+
+            <div class="footer_list_content">
+                <h3>Let Us Help You</h3>
+                <a href="">Your Account</a>
+                <a href="">Returns Center</a>
+                <a href="">100% Protection</a>
+                <a href="">App Download</a>
+                <a href="">Help</a>
+            </div>
+        </div>
+
+        <div class="footer_logo">
+            <div class="footer_logo_div logo"></div>
+            <select class="footer_logo_select">
+                <option hidden selected>English</option>
+            </select>
+        </div>
+
+        <div class="copyright">© 1996-2024, Amazon.com, Inc. or its affiliates</div>
+    </footer>
+
+</body>
+
+</html>
